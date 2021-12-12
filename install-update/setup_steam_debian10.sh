@@ -15,7 +15,7 @@ sudo apt update
 sudo apt install lib32gcc1 tmux unzip -y
 sudo apt-get install wine-development wine32-development -y
 curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zxvf -
-curl -sqL "https://github.com/assetto-corsa-web/accweb/releases/download/v1.14.1/accweb_1.14.1.zip" && unzip accweb_1.14.1.zip
+curl -OL "https://github.com/assetto-corsa-web/accweb/releases/download/v1.14.1/accweb_1.14.1.zip" && unzip accweb_1.14.1.zip
 ./steamcmd.sh +exit
 
 echo Writing update_accserver file
