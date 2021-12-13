@@ -75,7 +75,7 @@ cat <<EOF | tee cfg/event.json
             "sessionType": "P",
             "sessionDurationMinutes": 10
         },
-                {
+        {
             "hourOfDay": 12,
             "dayOfWeekend": 2,
             "timeMultiplier": 1,
