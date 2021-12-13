@@ -9,7 +9,6 @@
 # enable upnp
 # run wine accserver
 
-sudo add-apt-repository multiverse
 sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install lib32gcc1 tmux unzip -y
@@ -25,7 +24,7 @@ export LD_LIBRARY_PATH=`pwd`
 read -p "Username:" -s USER 
 echo
 read -p "Password:" -s PASS
-./steamcmd.sh +@sSteamCmdForcePlatformType windows +force_install_dir accserver +login $USER $PASS +app_update 1430110 +exit
+./steamcmd.sh +@sSteamCmdForcePlatformType windows +force_install_dir accserver +login \$USER \$PASS +app_update 1430110 +exit
 unset USERNAME 
 unset PASS
 EOF
